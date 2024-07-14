@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <form class="form" action="">
+      <div class="openbar">
+        <div class="bar">
+          <div class="back">
+            <p>Ismingiz ?</p>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <input
+            class="name"
+            required
+            placeholder="Ismingizni kiriting"
+            type="text"
+          />
+          <p>Familiangiz ?</p>
+          <input
+            class="lastname"
+            required
+            placeholder="Familiangizni kiriting"
+            type="text"
+          />
+          <p>username kiriting</p>
+          <input
+            class="username"
+            required
+            placeholder="username kiriting"
+            type="text"
+          />
+          <p>Yoshingizni kiriting</p>
+          <input
+            class="age"
+            required
+            placeholder="Yoshingiz nechchi ?"
+            type="text"
+          />
+          <button class="qoshish" type="submit">add</button>
+        </div>
+      </div>
+    </form>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__table">
+              <table class="table">
+                <thead>
+                  <tr class="">
+                    <th>ism</th>
+                    <th>familya</th>
+                    <th>yoydalanuvchi nomi</th>
+                    <th>yosh</th>
+                    <th>ID</th>
+                    <th>ielts daraja</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr">
+                    <td contenteditable="true" data-call="name">otabek</td>
+                    <td contenteditable="true" data-call="lastname">sediyorov</td>
+                    <td contenteditable="true" data-call="username">
+                      otabek298
+                    </td>
+                    <td contenteditable="true" class="age">39</td>
+                    <td contenteditable="true" class="id" data-call="id">
+                      65842
+                    </td>
+                    <td contenteditable="true" data-call="ilesScore">7.5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="plus">qo'shish</button>
+          </div>
+        </div>
+        <select class="score" name="" id="">
+          <option value="0.5">0.5</option>
+          <option value="1">1</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+        </select>
+      </section>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
